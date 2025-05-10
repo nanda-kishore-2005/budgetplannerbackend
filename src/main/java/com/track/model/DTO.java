@@ -106,20 +106,13 @@ public class DTO {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class MonthlyLimitRequest {
-        private BigDecimal amount;
-    }
-
-    @Data
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class MonthlyLimitResponse {
-        private Long id;
+    	private Long id;
         private BigDecimal amount;
         private LocalDateTime createdAt;
         private LocalDateTime updatedAt;
     }
 
+   
     @Data
     @Builder
     @NoArgsConstructor
