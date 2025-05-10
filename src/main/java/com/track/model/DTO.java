@@ -28,6 +28,21 @@ public class DTO {
         private String username;
         private String password;
     }
+    
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class MonthlyLimitResponse {
+        private Long id;
+        private BigDecimal amount;
+        private LocalDateTime createdAt;
+        private LocalDateTime updatedAt;
+
+        // ➕ Add these two lines:
+        private java.sql.Date startDate;
+        private java.sql.Date endDate;
+    }
 
     @Data
     @Builder

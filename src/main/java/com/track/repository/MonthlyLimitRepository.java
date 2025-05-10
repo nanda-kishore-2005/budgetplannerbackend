@@ -9,3 +9,4 @@ import java.util.Optional;
 public interface MonthlyLimitRepository extends JpaRepository<MonthlyLimit, Long> {
     Optional<MonthlyLimit> findByUserId(Long userId);
 }
+
